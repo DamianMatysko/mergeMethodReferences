@@ -1,9 +1,12 @@
 package sk.itsovy.damianmatysko;
+@FunctionalInterface
+interface GeneratorInterface {
+    Generator generate(int number);
+}
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
-        NumberIdentificator obj = new NumberIdentificator();
-        NumberInterface ref = () -> obj.isEvenNumber(10);
-        System.out.println(ref.resolve());
+        GeneratorInterface ref2 = Generator::new;
+        System.out.println(ref2.generate(10));
     }
 }
