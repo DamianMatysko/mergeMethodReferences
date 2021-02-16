@@ -1,7 +1,8 @@
 package sk.itsovy.damianmatysko;
+// anotacia
 @FunctionalInterface
 interface GeneratorInterface {
-    Generator generate(int number);
+    Generator generate(int number5);
 }
 
 public class Main{
