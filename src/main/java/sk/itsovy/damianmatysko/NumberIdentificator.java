@@ -7,4 +7,5 @@ public class NumberIdentificator {
         }
         return false;
     }
+
 }
